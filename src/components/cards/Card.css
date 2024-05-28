@@ -1,0 +1,37 @@
+/* Gradient Border */
+.border-gradient-tl-br {
+  border-image: linear-gradient(to right, #ff00ff, #00ff00);
+  border-image-slice: 1;
+}
+
+/* Gradient Glowing Effect */
+.gradient-glow {
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+/* Gradient Spinning Border */
+.gradient-spin {
+  animation: spin-border 5s linear infinite;
+}
+
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.moving-text {
+  animation: moveLeftToRight 7s linear infinite alternate; /* Change duration as needed */
+}
